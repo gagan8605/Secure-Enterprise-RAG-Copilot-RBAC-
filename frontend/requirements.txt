@@ -1,0 +1,5 @@
+# Frontend-only requirements for Streamlit Cloud deployment
+# The backend (FastAPI, ChromaDB, LangChain etc.) runs separately on Render
+
+streamlit==1.36.0
+requests==2.32.3
