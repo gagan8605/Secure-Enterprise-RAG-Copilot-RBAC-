@@ -1,0 +1,120 @@
+TECHCORP INC. — LEAVE & TIME OFF POLICY
+Confidential — For Employees Only
+Effective: January 1, 2025
+
+═══════════════════════════════════════════════════════════
+1. PAID TIME OFF (PTO)
+═══════════════════════════════════════════════════════════
+
+TechCorp uses a tenure-based PTO accrual model:
+
+  Years of Service        Annual PTO Days     Accrual Rate (per pay period)
+  ────────────────────    ───────────────     ─────────────────────────────
+  0 – 2 years             15 days             0.577 days
+  3 – 5 years             20 days             0.769 days
+  6 – 10 years            25 days             0.962 days
+  10+ years               Unlimited PTO       N/A (manager approval still required)
+
+PTO begins accruing from Day 1. A maximum of 10 days may be carried over to the
+next calendar year; any surplus is forfeited on January 31 each year.
+
+Upon separation from the company, accrued but unused PTO is paid out in full in
+your final paycheck (applicable in all states where required by law, and by default
+for all US employees at TechCorp).
+
+How to Request PTO:
+  1. Submit your request in Workday ≥ 2 weeks in advance for absences of 3+ days.
+  2. For single-day absences, notify your manager by 8 AM the morning of the absence.
+  3. PTO during major project milestones or release dates requires manager sign-off.
+
+═══════════════════════════════════════════════════════════
+2. SICK LEAVE
+═══════════════════════════════════════════════════════════
+
+Sick leave is separate from PTO and does not accrue or expire.
+Employees receive 10 paid sick days per calendar year (not carried over).
+
+Sick leave may be used for:
+  • Your own illness, injury, or medical appointments
+  • Care for an immediate family member (spouse, child, parent)
+  • Mental health days
+
+Doctor's note may be required for absences exceeding 3 consecutive days.
+
+═══════════════════════════════════════════════════════════
+3. PARENTAL LEAVE
+═══════════════════════════════════════════════════════════
+
+Primary Caregiver Leave:
+  • 16 weeks fully paid (100% of base salary) for birth, adoption, or foster placement
+  • Must be taken within 12 months of the qualifying event
+  • Eligible from Day 1 of employment (no waiting period)
+
+Secondary Caregiver Leave:
+  • 4 weeks fully paid
+  • Must be taken within 12 months of the qualifying event
+
+Notification: Notify your manager and People Ops at least 30 days before the expected
+start date when possible. Contact parentalleave@techcorp.com for paperwork.
+
+Parental leave does not count against PTO balances.
+
+═══════════════════════════════════════════════════════════
+4. BEREAVEMENT LEAVE
+═══════════════════════════════════════════════════════════
+
+  Immediate family (spouse, child, parent, sibling): 5 days paid
+  Extended family (grandparent, grandchild, in-law): 3 days paid
+  Other relationships: 1 day paid; additional days may be taken as PTO
+
+Bereavement leave may be extended at manager discretion for travel requirements.
+Submit documentation (if requested) to people@techcorp.com.
+
+═══════════════════════════════════════════════════════════
+5. COMPANY HOLIDAYS
+═══════════════════════════════════════════════════════════
+
+TechCorp observes 11 fixed federal holidays plus 3 floating holidays per year.
+
+2025 Fixed Holidays (US):
+  Jan 1    New Year's Day
+  Jan 20   Martin Luther King Jr. Day
+  Feb 17   Presidents' Day
+  May 26   Memorial Day
+  Jun 19   Juneteenth
+  Jul 4    Independence Day
+  Sep 1    Labor Day
+  Nov 11   Veterans Day
+  Nov 27   Thanksgiving Day
+  Nov 28   Day after Thanksgiving
+  Dec 25   Christmas Day
+
+Floating Holidays: Employees receive 3 additional floating holidays that may be
+used for religious observances, cultural events, or personal preference. These must
+be scheduled in advance and approved by your manager. Unused floating holidays do
+NOT carry over.
+
+═══════════════════════════════════════════════════════════
+6. JURY DUTY & CIVIC LEAVE
+═══════════════════════════════════════════════════════════
+
+TechCorp provides up to 10 paid days for jury duty. Employees serving on juries
+lasting longer than 10 days may use accrued PTO for additional days. Show your
+summons to HR and keep your manager informed of expected duration.
+
+Voting leave: Up to 2 hours of paid time off to vote in federal, state, and local
+elections where polls are not accessible before or after working hours.
+
+═══════════════════════════════════════════════════════════
+7. UNPAID LEAVE OF ABSENCE
+═══════════════════════════════════════════════════════════
+
+Employees who have exhausted all paid leave may request an unpaid leave of absence
+for personal reasons (subject to manager and HR approval). Maximum duration: 90 days.
+Benefits continue during approved unpaid leave (employee cost-share still applies).
+
+FMLA: Eligible employees (12 months tenure, 1,250+ hours worked) may take up to
+12 weeks of unpaid, job-protected leave under the Family and Medical Leave Act.
+Contact people@techcorp.com to initiate FMLA paperwork.
+
+Questions about leave? Contact: leave@techcorp.com | +1 (512) 555-0130

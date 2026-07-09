@@ -1,0 +1,108 @@
+TECHCORP INC. — DEPARTMENT BUDGET OVERVIEW
+CONFIDENTIAL — For Managers & Above Only
+Fiscal Year 2025 (January 1 – December 31, 2025)
+
+Approved by: CFO (jennifer.hayes@techcorp.com)
+Last Updated: June 30, 2025
+
+═══════════════════════════════════════════════════════════
+COMPANY-WIDE BUDGET SUMMARY
+═══════════════════════════════════════════════════════════
+
+Total FY2025 Operating Budget: $28,400,000
+
+Revenue Target FY2025: $41,200,000 ARR
+Current ARR (June 30): $36,800,000 (89.3% of target)
+Net Revenue Retention: 118%
+
+Burn Rate (last 90 days): $2.1M/month
+Cash Position: $22.4M
+Runway at current burn: 10.7 months (fundraising Round B in progress)
+
+═══════════════════════════════════════════════════════════
+DEPARTMENT BUDGET ALLOCATIONS
+═══════════════════════════════════════════════════════════
+
+┌───────────────────────────┬───────────────┬────────────────┬──────────────┐
+│ Department                │ FY2025 Budget │ H2 Allocation  │ H1 Actuals   │
+├───────────────────────────┼───────────────┼────────────────┼──────────────┤
+│ Engineering               │ $11,200,000   │ $5,800,000     │ $5,320,000   │
+│ Sales & Revenue           │ $6,400,000    │ $3,200,000     │ $3,180,000   │
+│ People & HR               │ $2,100,000    │ $1,050,000     │ $998,000     │
+│ Marketing & Growth        │ $3,200,000    │ $1,700,000     │ $1,490,000   │
+│ Product Management        │ $1,600,000    │ $820,000       │ $774,000     │
+│ G&A (Finance, Legal, IT)  │ $2,400,000    │ $1,180,000     │ $1,228,000   │
+│ Customer Success          │ $1,500,000    │ $760,000       │ $732,000     │
+├───────────────────────────┼───────────────┼────────────────┼──────────────┤
+│ TOTAL                     │ $28,400,000   │ $14,510,000    │ $13,722,000  │
+└───────────────────────────┴───────────────┴────────────────┴──────────────┘
+
+Note: H1 actuals are $778K under budget. The carryover will be reallocated
+to Engineering (H2 Hiring) and Marketing (Q4 campaign acceleration).
+
+═══════════════════════════════════════════════════════════
+ENGINEERING BUDGET BREAKDOWN
+═══════════════════════════════════════════════════════════
+
+Total Engineering Budget FY2025: $11,200,000
+
+  Headcount & Compensation    $8,400,000    (75%)
+  Cloud Infrastructure (AWS)  $1,400,000    (12.5%)
+    - EC2/EKS compute:          $820,000
+    - RDS/Aurora databases:     $310,000
+    - S3/CloudFront/CDN:        $180,000
+    - Data transfer & misc:     $90,000
+  SaaS Tools & Licenses       $580,000      (5.2%)
+    - GitHub Enterprise: $84K
+    - Datadog APM: $96K
+    - PagerDuty: $48K
+    - Retool: $36K
+    - Other dev tools: $316K
+  Training & Conferences      $180,000      (1.6%)
+  Hardware & Equipment        $320,000      (2.9%)
+  Contingency Reserve         $320,000      (2.9%)
+
+H2 Engineering Key Investments:
+  • 8 new engineering hires approved — budget impact: +$1.2M annualized
+  • LLM API costs (Groq/Anthropic for AI Suite): $150K allocated for Q4
+  • Security penetration testing: $45K (October)
+  • SOC 2 auditor fees: $80K
+
+═══════════════════════════════════════════════════════════
+MARKETING BUDGET BREAKDOWN
+═══════════════════════════════════════════════════════════
+
+Total Marketing Budget FY2025: $3,200,000
+
+  Demand Generation & Paid Media  $1,280,000  (40%)
+    - Google Ads:         $520,000
+    - LinkedIn Ads:       $420,000
+    - Programmatic:       $340,000
+  Content & SEO                   $480,000    (15%)
+  Events & Conferences            $640,000    (20%)
+    - Gartner Data Summit: $180K (October)
+    - SaaStr Annual: $95K (September)
+    - AWS re:Invent Booth: $220K (December)
+    - Internal Sales Kickoff: $145K
+  Brand & Creative                $320,000    (10%)
+  Marketing Technology            $288,000    (9%)
+  Agency Retainers                $192,000    (6%)
+
+Q4 Campaign: "TechCorp AI" — Budget uplift request of $200K submitted to CFO.
+Decision expected by August 1.
+
+═══════════════════════════════════════════════════════════
+BUDGET GOVERNANCE
+═══════════════════════════════════════════════════════════
+
+Approval Thresholds (Managers):
+  • <$5,000: Manager approval only
+  • $5,000 – $25,000: Manager + Finance Business Partner
+  • $25,000 – $100,000: Manager + VP + Finance
+  • >$100,000: Manager + VP + CFO + CEO
+
+Reallocation between line items within a department is permitted up to 10% without
+CFO approval. Reallocation above 10% requires a formal budget amendment request.
+
+Budget review cadence: Monthly (first Tuesday of month, 2:00 PM CT)
+Finance HRBP: ryan.oconnor@techcorp.com | +1 (512) 555-0160

@@ -1,0 +1,134 @@
+TECHCORP INC. — COMPANY HANDBOOK
+Effective Date: January 1, 2025
+Version: 3.2
+
+═══════════════════════════════════════════════════════════
+1. WELCOME TO TECHCORP
+═══════════════════════════════════════════════════════════
+
+Welcome to TechCorp Inc.! We are a software technology company founded in 2015,
+headquartered in Austin, Texas, with offices in New York, London, and Bangalore.
+We build enterprise data analytics and automation platforms serving Fortune 500 clients.
+
+Our Mission: Empower organizations with intelligent software that transforms raw data
+into clear, actionable decisions.
+
+Our Core Values:
+  • Integrity First — We do the right thing, even when it's hard.
+  • Customer Obsession — We succeed when our customers succeed.
+  • Innovation Without Fear — We encourage bold ideas and calculated risks.
+  • Inclusive Excellence — Diverse teams build better products.
+  • Continuous Learning — We invest in growing every TechCorp team member.
+
+═══════════════════════════════════════════════════════════
+2. CODE OF CONDUCT
+═══════════════════════════════════════════════════════════
+
+All TechCorp employees are expected to:
+
+  a) Treat colleagues, clients, and partners with respect and professionalism.
+  b) Protect confidential company and customer information.
+  c) Disclose and avoid conflicts of interest.
+  d) Comply with all applicable laws and regulations.
+  e) Report suspected violations through our anonymous Ethics Hotline:
+     ethics@techcorp.com | 1-800-555-ETHICS
+
+Harassment, discrimination, retaliation, or any form of workplace violence will
+not be tolerated and may result in immediate termination.
+
+═══════════════════════════════════════════════════════════
+3. WORKING HOURS & LOCATIONS
+═══════════════════════════════════════════════════════════
+
+Standard Hours: 9:00 AM – 6:00 PM, Monday–Friday (local time).
+TechCorp operates a hybrid work model — employees are expected to be in office
+a minimum of 2 days per week (Tuesday and Thursday preferred).
+
+Remote Work: Full-remote arrangements require manager approval and are documented
+in your employment agreement addendum.
+
+Core Collaboration Hours: 10:00 AM – 3:00 PM your local timezone — all employees
+should be reachable during this window.
+
+Overtime: Non-exempt employees must obtain prior written manager approval for
+any hours beyond 40 per week. Exempt employees are not eligible for overtime pay.
+
+═══════════════════════════════════════════════════════════
+4. OFFICE LOCATIONS & CONTACTS
+═══════════════════════════════════════════════════════════
+
+  • Headquarters (Austin, TX):
+    1200 Innovation Drive, Suite 500, Austin, TX 78701
+    Reception: +1 (512) 555-0100
+
+  • New York Office:
+    350 Fifth Avenue, Floor 42, New York, NY 10118
+    Reception: +1 (212) 555-0200
+
+  • London Office:
+    20 Finsbury Square, London EC2A 1AF, UK
+    Reception: +44 20 5555 0300
+
+  • Bangalore Office:
+    Block C, Prestige Tech Park, Marathahalli, Bangalore 560037, India
+    Reception: +91 80 5555 0400
+
+═══════════════════════════════════════════════════════════
+5. IT & EQUIPMENT POLICY
+═══════════════════════════════════════════════════════════
+
+All employees receive a company-provisioned laptop. Personal devices may be used
+for email via the TechCorp mobile app (MDM enrollment required).
+
+Software Installation: Only IT-approved software may be installed on company devices.
+Submit requests via the IT Portal at https://it.techcorp.internal.
+
+Data Storage: Company data must reside in approved systems (Google Workspace,
+Confluence, or designated cloud storage). Personal cloud accounts (Dropbox, personal
+Google Drive) are not authorized for company data.
+
+Security: Employees must use VPN when accessing internal resources from outside
+the office. MFA is mandatory on all company accounts.
+
+IT Support: helpdesk@techcorp.com | Ext. 1234 | Mon–Fri 8 AM–8 PM ET
+
+═══════════════════════════════════════════════════════════
+6. EXPENSE REIMBURSEMENT
+═══════════════════════════════════════════════════════════
+
+Pre-approved business expenses are reimbursed within 15 business days of submission.
+Submit via Concur (expenses.techcorp.internal) with receipts attached.
+
+Meal limits: $25/person (team lunch), $75/person (client entertainment).
+Travel must be booked via our corporate travel portal (Navan) to qualify for
+reimbursement. Personal bookings are reimbursed at coach/standard rates only.
+
+═══════════════════════════════════════════════════════════
+7. COMMUNICATION TOOLS
+═══════════════════════════════════════════════════════════
+
+  • Slack         — primary async communication
+  • Google Meet   — video meetings
+  • Jira          — project and ticket management
+  • Confluence    — internal wiki and documentation
+  • Google Workspace — email, calendar, docs
+
+All communications on company tools are subject to monitoring per our
+Acceptable Use Policy (see Confluence: Legal/Policies/AUP).
+
+═══════════════════════════════════════════════════════════
+8. DRESS CODE
+═══════════════════════════════════════════════════════════
+
+Business casual is standard for in-office days. Client-facing meetings may
+require business professional attire. Smart casual is fine on remote days.
+
+═══════════════════════════════════════════════════════════
+9. ACKNOWLEDGEMENT
+═══════════════════════════════════════════════════════════
+
+By joining TechCorp, all employees agree to the policies in this handbook.
+The handbook is reviewed and updated annually. Employees will be notified of
+material changes via company-wide email.
+
+Questions? Contact People Operations: people@techcorp.com

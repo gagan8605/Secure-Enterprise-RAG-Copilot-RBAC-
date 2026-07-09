@@ -1,0 +1,112 @@
+TECHCORP INC. — EMPLOYEE FREQUENTLY ASKED QUESTIONS (FAQ)
+Last Updated: March 2025
+
+═══════════════════════════════════════════════════════════
+GETTING STARTED
+═══════════════════════════════════════════════════════════
+
+Q: What is TechCorp's main product?
+A: TechCorp builds DataPilot — an enterprise data analytics platform. We also offer
+   AutoFlow, our workflow automation suite. Combined, they serve over 400 enterprise
+   clients across North America and Europe.
+
+Q: Who do I contact on my first day?
+A: Your hiring manager will send a Day-1 checklist. Your onboarding buddy (assigned
+   by People Ops) will also reach out the week before you start. For IT setup, email
+   helpdesk@techcorp.com with your employee ID.
+
+Q: Where is the employee portal?
+A: https://portal.techcorp.internal — accessible via VPN or from the office network.
+   It links to payroll (ADP), benefits (Benefitfocus), IT tickets, and expense reports.
+
+Q: How do I access the company Slack?
+A: You'll receive an invitation to your TechCorp email address. Download the Slack
+   desktop app and sign in with Google SSO using your @techcorp.com account.
+
+═══════════════════════════════════════════════════════════
+PAYROLL & COMPENSATION
+═══════════════════════════════════════════════════════════
+
+Q: When do I get paid?
+A: TechCorp pays bi-weekly (every other Friday). Your first paycheck may be delayed
+   by one pay cycle depending on your start date.
+
+Q: How do I set up direct deposit?
+A: Log in to ADP (adp.techcorp.internal) → Payment → Banking Information → Add account.
+   Allow 1–2 pay cycles for the change to take effect.
+
+Q: Where can I find my pay stubs?
+A: All pay stubs and W-2s are available in ADP under "Pay" → "Pay Statements."
+
+Q: Who handles payroll questions?
+A: payroll@techcorp.com or call +1 (512) 555-0150 Mon–Fri 9 AM–5 PM CT.
+
+═══════════════════════════════════════════════════════════
+BENEFITS OVERVIEW
+═══════════════════════════════════════════════════════════
+
+Q: When do my benefits start?
+A: Benefits are effective on your first day of employment. You have 30 days from your
+   start date to make benefits elections in Benefitfocus; otherwise you'll be enrolled
+   in default plans until the next Open Enrollment window (November each year).
+
+Q: What health insurance plans does TechCorp offer?
+A: TechCorp offers three medical plan tiers through BCBS:
+   - TechCorp Basic PPO
+   - TechCorp Select PPO (most popular)
+   - TechCorp HDHP + HSA
+   For plan details and premiums, see the Benefits Guide (employee-only document).
+
+Q: Does TechCorp offer a 401(k)?
+A: Yes. TechCorp matches 100% of your contributions up to 4% of your salary.
+   The 401(k) is administered by Fidelity. You may enroll or adjust contributions
+   at any time via https://nb.fidelity.com/techcorp.
+
+Q: Is there a gym/wellness benefit?
+A: Yes — TechCorp reimburses up to $600/year in eligible gym or fitness expenses.
+   Submit receipts through Concur with the category "Wellness Reimbursement."
+
+═══════════════════════════════════════════════════════════
+LEAVE & TIME OFF
+═══════════════════════════════════════════════════════════
+
+Q: How many PTO days do I get?
+A: PTO accrual is based on tenure. See the Leave Policy document for full details.
+   All PTO balances are visible in the employee portal under "Time & Attendance."
+
+Q: How do I request time off?
+A: Submit PTO requests in the portal (Workday) → "Time Off" → "Request." Requests
+   of 3+ consecutive days require at least 2 weeks advance notice (non-emergency).
+
+Q: Are there paid company holidays?
+A: Yes. TechCorp observes 11 US federal holidays plus 3 floating holidays each year.
+   The full holiday calendar is published in the employee portal in November for the
+   following year.
+
+═══════════════════════════════════════════════════════════
+LEARNING & DEVELOPMENT
+═══════════════════════════════════════════════════════════
+
+Q: Does TechCorp support professional development?
+A: Every employee receives a $1,500 annual Learning & Development (L&D) budget for
+   courses, certifications, books, and conferences. Submit reimbursement requests
+   through Concur using the "L&D" category with manager pre-approval.
+
+Q: Are there internal training programs?
+A: Yes — "TechCorp University" (TCU) on our internal LMS offers courses on our products,
+   technical skills, leadership, and compliance. Access via https://tcu.techcorp.internal.
+
+═══════════════════════════════════════════════════════════
+REPORTING CONCERNS
+═══════════════════════════════════════════════════════════
+
+Q: How do I report a workplace concern anonymously?
+A: Use our Ethics Hotline: ethics@techcorp.com or 1-800-555-ETHICS (available 24/7).
+   EthicsPoint, our third-party reporting platform, is also available at
+   https://www.ethicspoint.com/techcorp (fully anonymous option available).
+
+Q: What is TechCorp's anti-harassment policy?
+A: TechCorp has a zero-tolerance policy for any form of harassment or discrimination.
+   All complaints are investigated promptly and confidentially. Retaliation against
+   anyone who reports in good faith is strictly prohibited. See the full policy in
+   Confluence under Legal/Policies/Anti-Harassment.

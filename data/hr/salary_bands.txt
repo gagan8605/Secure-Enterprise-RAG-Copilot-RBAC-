@@ -1,0 +1,117 @@
+TECHCORP INC. — COMPENSATION SALARY BANDS
+STRICTLY CONFIDENTIAL — HR & Executive Leadership Only
+Effective: January 1, 2025 | Next Review: December 2025
+
+Prepared by: Chief People Officer (lisa.park@techcorp.com)
+Approved by: CEO (david.kim@techcorp.com) | CFO (jennifer.hayes@techcorp.com)
+
+═══════════════════════════════════════════════════════════
+COMPENSATION PHILOSOPHY
+═══════════════════════════════════════════════════════════
+
+TechCorp targets the 65th percentile of the San Francisco Bay Area market for
+base salary and the 75th percentile when including total compensation (base +
+equity + bonus). Market data sourced from Radford Global Technology Survey,
+Levels.fyi, and Carta Compensation Benchmarking (Q1 2025 data).
+
+All offers must fall within the applicable band. Exceptions above band maximum
+require CPO + CEO approval. No exceptions will be made for above-max offers
+without written approval on file.
+
+═══════════════════════════════════════════════════════════
+ENGINEERING — INDIVIDUAL CONTRIBUTOR (IC) LEVELS
+═══════════════════════════════════════════════════════════
+
+  Level    Title                    Base Salary Range           Bonus Target   Equity (RSU Grant)
+  ───────  ────────────────────     ─────────────────────────   ────────────   ──────────────────
+  IC-1     Software Engineer I      $95,000  – $115,000         5%             $40,000 (4-yr vest)
+  IC-2     Software Engineer II     $120,000 – $145,000         7%             $70,000 (4-yr vest)
+  IC-3     Senior Software Eng.     $150,000 – $185,000         10%            $120,000 (4-yr vest)
+  IC-4     Staff Engineer           $190,000 – $230,000         12%            $200,000 (4-yr vest)
+  IC-5     Senior Staff Engineer    $235,000 – $275,000         15%            $350,000 (4-yr vest)
+  IC-6     Principal Engineer       $280,000 – $330,000         18%            $500,000 (4-yr vest)
+  IC-7     Distinguished Engineer   $335,000 – $390,000         20%            $750,000 (4-yr vest)
+  IC-8     Fellow                   $395,000+  (market-based)   25%            $1,200,000+
+
+Notes:
+  • Equity grants vest over 4 years: 25% cliff at 12 months, then monthly.
+  • Refresh grants are awarded annually at the Q4 performance review cycle.
+  • IC-1 and IC-2 are not eligible for equity refresh in the first 2 years.
+  • Salaries above represent the Austin, TX benchmark. SF/NYC = +15–20% geo adjustment.
+  • Remote employees outside major metros may have a geo adjustment of -5% to -15%.
+
+═══════════════════════════════════════════════════════════
+ENGINEERING — MANAGEMENT LEVELS
+═══════════════════════════════════════════════════════════
+
+  Level    Title                    Base Salary Range           Bonus Target   Equity (RSU Grant)
+  ───────  ────────────────────     ─────────────────────────   ────────────   ──────────────────
+  M-1      Engineering Manager      $185,000 – $220,000         15%            $200,000 (4-yr vest)
+  M-2      Senior Eng. Manager      $225,000 – $265,000         18%            $320,000 (4-yr vest)
+  M-3      Director of Engineering  $270,000 – $320,000         22%            $500,000 (4-yr vest)
+  M-4      VP of Engineering        $325,000 – $400,000         30%            $800,000 (4-yr vest)
+
+═══════════════════════════════════════════════════════════
+PRODUCT MANAGEMENT LEVELS
+═══════════════════════════════════════════════════════════
+
+  Level    Title                    Base Salary Range           Bonus Target   Equity (RSU Grant)
+  ───────  ────────────────────     ─────────────────────────   ────────────   ──────────────────
+  PM-1     Associate PM             $90,000  – $110,000         5%             $35,000
+  PM-2     Product Manager          $120,000 – $150,000         10%            $80,000
+  PM-3     Senior PM                $155,000 – $190,000         12%            $150,000
+  PM-4     Principal PM             $195,000 – $235,000         15%            $250,000
+  PM-5     Director of Product      $240,000 – $290,000         20%            $450,000
+  PM-6     VP / CPO                 $295,000 – $380,000         30%            $700,000
+
+═══════════════════════════════════════════════════════════
+SALES & REVENUE LEVELS
+═══════════════════════════════════════════════════════════
+
+Note: Sales base salary + commission. OTE = On-Target Earnings at 100% quota.
+
+  Level    Title                    Base Salary Range     OTE Range           Equity
+  ───────  ────────────────────     ─────────────────     ─────────────────   ───────────────
+  S-1      SDR/BDR                  $55,000 – $70,000     $80,000 – $100,000  $15,000
+  S-2      Account Executive (SMB)  $85,000 – $100,000    $160,000 – $200,000 $40,000
+  S-3      Account Executive (Mid)  $100,000 – $125,000   $200,000 – $250,000 $80,000
+  S-4      Senior AE (Enterprise)   $130,000 – $160,000   $260,000 – $340,000 $140,000
+  S-5      Sales Manager            $140,000 – $175,000   $240,000 – $300,000 $200,000
+  S-6      VP of Sales              $200,000 – $250,000   $380,000 – $500,000 $500,000
+
+═══════════════════════════════════════════════════════════
+GENERAL & ADMINISTRATIVE
+═══════════════════════════════════════════════════════════
+
+  Finance / Legal / HR / IT roles follow a similar 6-level structure.
+  G&A IC levels range from $65,000 (G-1) to $220,000 (G-6/Director).
+  Details available in the full compensation matrix (HR Confluence: /hr/comp-matrix).
+
+═══════════════════════════════════════════════════════════
+ANNUAL REVIEW & MERIT CYCLE
+═══════════════════════════════════════════════════════════
+
+  • Annual performance reviews: November (peer + manager review)
+  • Merit increase decisions: December, effective January 1
+  • Merit budget for FY2025: 5% of total salary spend
+  • Distribution guidance:
+    - Exceeds Expectations: 7–10% merit increase
+    - Meets Expectations:   3–5% merit increase
+    - Below Expectations:   0% (performance improvement plan may apply)
+  • Promotions: Require manager nomination + band calibration committee approval.
+    Promotion increase = new band midpoint or minimum 8% above current salary.
+
+═══════════════════════════════════════════════════════════
+IMPORTANT — CONFIDENTIALITY NOTICE
+═══════════════════════════════════════════════════════════
+
+This document contains sensitive compensation data. It may only be shared with:
+  • Members of the HR team
+  • Executive Leadership Team (ELT)
+  • Finance Business Partners (for compensation modeling only)
+
+Any unauthorized disclosure of salary band information may result in disciplinary
+action up to and including termination. Do not discuss specific salary figures
+with employees outside of HR and Finance.
+
+Questions: compensation@techcorp.com (HR eyes only)

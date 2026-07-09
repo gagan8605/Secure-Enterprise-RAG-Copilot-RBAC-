@@ -1,0 +1,132 @@
+TECHCORP INC. — ENGINEERING & PRODUCT TEAM ROADMAP
+CONFIDENTIAL — For Managers & Above Only
+Q3 2025 – Q1 2026
+
+═══════════════════════════════════════════════════════════
+EXECUTIVE SUMMARY
+═══════════════════════════════════════════════════════════
+
+This roadmap covers the Engineering and Product priorities for H2 2025 and Q1 2026.
+The overarching theme is "Platform Intelligence" — embedding AI/ML capabilities
+directly into our DataPilot and AutoFlow products to deepen enterprise moats and
+accelerate our path to $50M ARR.
+
+All timelines assume current headcount plus approved H2 hires (see Headcount Plan).
+Dates marked [STRETCH] are aspirational and contingent on hiring velocity.
+
+═══════════════════════════════════════════════════════════
+Q3 2025 (July – September) — FOUNDATION
+═══════════════════════════════════════════════════════════
+
+DATAPILOT — Core Platform
+  ▸ DataPilot 4.0 release [Target: Aug 15]
+    - Multi-tenant architecture redesign (critical for enterprise scale)
+    - Row-level security (RLS) for shared dashboards
+    - Query engine performance: target 3x improvement on 10M+ row datasets
+    - API v3 (REST + GraphQL) — deprecates v1 API (90-day migration notice)
+
+  ▸ AI-Assisted Analytics [Target: Sep 30]
+    - Natural language query (NLQ) interface powered by LLM (Llama 3 fine-tuned)
+    - Smart anomaly detection alerts (real-time, no manual threshold setting)
+    - Auto-generated insight summaries on dashboard load
+
+AUTOFLOW — Workflow Automation
+  ▸ AutoFlow 2.5 release [Target: Jul 31]
+    - 40 new pre-built connectors (Salesforce, SAP, Workday, ServiceNow)
+    - Webhook trigger support (replaces polling-based triggers)
+    - Branching logic editor redesign (reduces workflow creation time by ~60%)
+
+  ▸ Compliance Module [Target: Sep 15]
+    - SOC 2 Type II audit prep — logging and data residency controls
+    - EU AI Act readiness assessment for AutoFlow AI features
+    - GDPR "right to erasure" automated workflow builder
+
+Q3 KEY METRICS:
+  • DataPilot 4.0 adoption: 80% of existing customers migrated within 60 days
+  • NLQ beta: 20 design-partner customers enrolled
+  • AutoFlow connectors: 40 new connectors with <2% error rate in prod
+  • On-call P1 SLA: <15 min acknowledgement, <2 hr resolution
+
+═══════════════════════════════════════════════════════════
+Q4 2025 (October – December) — SCALE
+═══════════════════════════════════════════════════════════
+
+DATAPILOT
+  ▸ DataPilot AI Suite GA [Target: Oct 31]
+    - NLQ exits beta → general availability
+    - Predictive forecasting module (time-series, no-code setup)
+    - Embedded analytics SDK for customers to embed in their own apps
+
+  ▸ Enterprise SSO & Governance [Target: Nov 30]
+    - SAML 2.0 / OIDC SSO for all enterprise plans
+    - Centralized audit log with SIEM export (Splunk, Datadog)
+    - Data lineage graph (track data from source to dashboard)
+
+AUTOFLOW
+  ▸ AutoFlow AI Agents [Target: Dec 15] [STRETCH]
+    - Agentic workflows: AI can decide branching logic based on document content
+    - Natural language workflow builder ("Create a workflow that…")
+    - Human-in-the-loop approval gates for AI decisions
+
+  ▸ AutoFlow Enterprise Tier [Target: Nov 15]
+    - Dedicated execution environment (isolation, SLAs)
+    - Priority support with named CSM
+    - Custom connector SDK + professional services offering
+
+Q4 KEY METRICS:
+  • NLQ GA: 100 paying customers using NLQ monthly
+  • ESPP revenue from embedded analytics: first $500K ARR from SDK
+  • AutoFlow AI Agents: 5 design-partner pilots live
+  • SOC 2 Type II certification received by Dec 31
+
+═══════════════════════════════════════════════════════════
+Q1 2026 (January – March) — EXPAND
+═══════════════════════════════════════════════════════════
+
+  ▸ Mobile App (DataPilot Go) [Target: Feb 28]
+    - iOS + Android native app for dashboard viewing and alerting
+    - Offline mode for field sales teams
+
+  ▸ Data Marketplace [Target: Mar 31] [STRETCH]
+    - Curated third-party data connectors marketplace
+    - Revenue share model with connector partners (30/70 split)
+
+  ▸ International Expansion Infrastructure [Target: Jan 31]
+    - EU data residency (AWS Frankfurt region)
+    - Localization: German, French, Spanish
+    - VAT / billing infrastructure for EMEA customers
+
+Q1 2026 KEY METRICS:
+  • Mobile app: 1,000 DAU within 60 days of launch
+  • Data Marketplace: 15 listed connectors, 50 customers using marketplace
+  • EMEA pipeline: $5M in EMEA qualified pipeline generated
+
+═══════════════════════════════════════════════════════════
+TECHNICAL DEBT & INFRASTRUCTURE
+═══════════════════════════════════════════════════════════
+
+Ongoing across all quarters:
+  • Migrate remaining monolith services to microservices (30% complete as of Q2 end)
+  • K8s cluster optimization — target 25% infra cost reduction by EOY
+  • Database migration: PostgreSQL 14 → 16 (all environments)
+  • Deprecate Node.js 16 — all services must be on Node.js 20+ by Sep 30
+
+═══════════════════════════════════════════════════════════
+RISKS & DEPENDENCIES
+═══════════════════════════════════════════════════════════
+
+  HIGH:  Hiring velocity — Q3/Q4 plans assume 8 net new engineers hired by Sep 1.
+         Delay in hiring directly impacts AI Suite GA timeline.
+
+  MED:   LLM provider pricing volatility — if inference costs exceed $15K/month by
+         Q4, we will evaluate on-premise Llama hosting.
+
+  MED:   SOC 2 audit timeline — auditors booked for October. If audit reveals
+         material gaps, AutoFlow Enterprise Tier launch may slip to Q1 2026.
+
+  LOW:   EU AI Act — monitoring regulatory developments. Current products are
+         likely "limited risk" category but legal is reviewing.
+
+Roadmap owner: VP of Engineering (marcus.chen@techcorp.com)
+Product owner: CPO (sarah.johnson@techcorp.com)
+Last reviewed: June 28, 2025 | Next review: October 1, 2025

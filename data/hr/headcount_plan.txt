@@ -1,0 +1,121 @@
+TECHCORP INC. — HEADCOUNT PLAN & TALENT PIPELINE
+STRICTLY CONFIDENTIAL — HR & Executive Leadership Only
+FY2025 H2 Plan | As of July 1, 2025
+
+Prepared by: Head of Talent Acquisition (priya.sharma@techcorp.com)
+Reviewed by: CPO, CFO, CEO
+
+═══════════════════════════════════════════════════════════
+CURRENT HEADCOUNT SNAPSHOT
+═══════════════════════════════════════════════════════════
+
+Total Employees (July 1, 2025): 187 full-time employees (FTE)
+  Engineering:         82 FTE
+  Sales & Revenue:     41 FTE
+  People & HR:         12 FTE
+  Marketing:           18 FTE
+  Product Management:  14 FTE
+  G&A:                 20 FTE
+
+Open Reqs (currently posted): 23
+  Active Candidates in Pipeline: 67
+  Offers Extended: 4
+  Offers Pending Acceptance: 2
+
+Average Time-to-Fill (Q2 2025): 47 days
+Target Time-to-Fill (H2): 40 days
+
+Voluntary Turnover (LTM): 11.2%   [Industry benchmark: 13.8%]
+Regrettable Turnover (LTM): 4.1%  [Target: <5%]
+
+═══════════════════════════════════════════════════════════
+H2 2025 APPROVED HEADCOUNT ADDITIONS
+═══════════════════════════════════════════════════════════
+
+ENGINEERING — 12 Net New Hires
+
+  Req ID   Role                           Level  Location     Target Start  Salary Budget
+  ───────  ─────────────────────────────  ─────  ───────────  ────────────  ─────────────
+  ENG-101  Backend Engineer (Golang)      IC-2   Austin       Aug 1         $138,000
+  ENG-102  Backend Engineer (Golang)      IC-2   Austin       Aug 1         $138,000
+  ENG-103  ML Engineer (LLM/Fine-tuning)  IC-3   Remote-US    Aug 15        $178,000
+  ENG-104  ML Engineer (LLM/Fine-tuning)  IC-3   Remote-US    Aug 15        $178,000
+  ENG-105  Senior Frontend (React/TS)     IC-3   New York     Sep 1         $185,000
+  ENG-106  Platform Eng. (K8s/AWS)        IC-3   Austin       Sep 1         $180,000
+  ENG-107  Data Engineer (dbt/Spark)      IC-2   Bangalore    Sep 15        $95,000
+  ENG-108  Data Engineer (dbt/Spark)      IC-2   Bangalore    Sep 15        $95,000
+  ENG-109  Security Engineer              IC-3   Austin       Oct 1         $182,000
+  ENG-110  Staff Engineer (AI Platform)   IC-4   Remote-US    Oct 1         $225,000
+  ENG-111  Engineering Manager            M-1    Austin       Oct 15        $210,000
+  ENG-112  QA / SDET                      IC-2   Austin       Nov 1         $130,000
+
+  Engineering Hiring Budget H2: $1,934,000 annualized base (prorated to $1,043,000 for H2)
+
+PRODUCT MANAGEMENT — 3 Net New Hires
+
+  Req ID   Role                           Level  Location     Target Start  Salary Budget
+  ───────  ─────────────────────────────  ─────  ───────────  ────────────  ─────────────
+  PM-101   Product Manager (AI/ML)        PM-3   Austin       Aug 1         $172,000
+  PM-102   Senior PM (Enterprise)         PM-3   New York     Sep 1         $188,000
+  PM-103   Associate PM (Integrations)    PM-1   Austin       Oct 1         $100,000
+
+SALES — 8 Net New Hires
+
+  Req ID   Role                           Level  Location     Target Start  Salary/OTE Budget
+  ───────  ─────────────────────────────  ─────  ───────────  ────────────  ─────────────────
+  SLS-101  Enterprise AE (East)           S-4    New York     Aug 1         $150K / $310K OTE
+  SLS-102  Enterprise AE (West)           S-4    Remote-US    Aug 1         $150K / $310K OTE
+  SLS-103  Mid-Market AE (x2)             S-3    Austin       Aug 15        $110K / $225K OTE
+  SLS-104  SDR Team Lead                  S-2    Austin       Sep 1         $95K / $175K OTE
+  SLS-105  Solutions Engineer             S-3    Remote-US    Sep 1         $130K OTE
+  SLS-106  SDR (x2)                       S-1    Austin       Sep 15        $62K / $90K OTE
+
+CUSTOMER SUCCESS — 2 Net New Hires
+
+  CSM-101  Customer Success Manager       CS-2   Austin       Sep 1         $115,000
+  CSM-102  Technical Account Manager      CS-3   New York     Oct 1         $142,000
+
+═══════════════════════════════════════════════════════════
+PENDING / UNDER REVIEW (Not Yet Approved)
+═══════════════════════════════════════════════════════════
+
+  The following roles are in discussion but require Board approval for budget:
+  • VP of Marketing (replacement + upgrade from current Director) — $280K base
+  • Head of International Sales (EMEA) — $240K base (London-based)
+  • 4x additional Engineers (Q1 2026) — pending Round B close
+
+═══════════════════════════════════════════════════════════
+ATTRITION RISK REGISTER
+═══════════════════════════════════════════════════════════
+
+  The following employees have been flagged as elevated flight risk by their managers.
+  This information is STRICTLY confidential to HR and relevant VPs only.
+
+  Employee ID  Role             Risk Level  Primary Factor            Mitigation Plan
+  ───────────  ───────────────  ──────────  ────────────────────────  ───────────────────────────
+  EMP-0042     Staff Engineer   HIGH        Competing offer (known)   Retention bonus: $45K vest 1yr
+  EMP-0078     Senior AE        HIGH        Manager conflict          Manager reassignment review
+  EMP-0115     Senior PM        MEDIUM      Work-life balance         Flex-time arrangement approved
+  EMP-0033     ML Engineer      MEDIUM      Compensation below band   Merit review moved to Q3
+  EMP-0061     Data Engineer    LOW         Bangalore team morale     Team offsite approved for Aug
+
+HR Action: Conduct stay interviews for all HIGH-risk employees by July 31.
+
+═══════════════════════════════════════════════════════════
+DIVERSITY HIRING GOALS (H2 2025)
+═══════════════════════════════════════════════════════════
+
+  Current engineering team demographics (self-reported):
+    Female-identifying: 24%   [Industry avg: 26%]
+    Underrepresented minorities: 18%  [Industry avg: 20%]
+
+  H2 Goals:
+    • ≥40% of engineering offer-extends to female-identifying candidates
+    • ≥25% of all hires from URG backgrounds
+    • Partner with 3 HBCU career fairs (Hampton, Howard, Spelman)
+
+  Sourcing initiatives:
+    • TechCorp Summer Engineering Internship → 6 offers extended for FY2026 class
+    • CodePath partnership: 8 scholarships, pipeline for IC-1 roles
+
+Questions: talent@techcorp.com | Slack: #hr-talent (private channel)
