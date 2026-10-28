@@ -10,6 +10,7 @@ Usage:
     result = retrieve_and_answer("What is the parental leave policy?", user_role="employee")
 """
 import logging
+import time
 from functools import lru_cache
 
 from langchain_huggingface import HuggingFaceEmbeddings
@@ -52,7 +53,10 @@ def _get_embeddings() -> HuggingFaceEmbeddings:
 def _get_collection():
     global _chroma_client, _collection
     if _collection is None:
-        _chroma_client = chromadb.PersistentClient(path=CHROMA_DB_PATH)
+        _chroma_client = chromadb.PersistentClient(
+            path=CHROMA_DB_PATH,
+            settings=chromadb.config.Settings(anonymized_telemetry=False),
+        )
         _collection = _chroma_client.get_collection(COLLECTION_NAME)
     return _collection
 
@@ -93,21 +97,35 @@ _ACCESS_DENIED_MSG = (
 
 # ─── Main retrieval function ───────────────────────────────────────────────────
 
-def retrieve_and_answer(question: str, user_role: str) -> dict:
+def retrieve_and_answer(
+    question: str,
+    user_role: str,
+    top_k: int | None = None,
+    model: str | None = None,
+    temperature: float | None = None,
+) -> dict:
     """
     Core RBAC retrieval + generation.
 
     Parameters
     ----------
-    question  : the user's question string
-    user_role : JWT-verified role (public / employee / manager / hr)
+    question    : the user's question string
+    user_role   : JWT-verified role (public / employee / manager / hr)
+    top_k       : optional number of chunks to retrieve (default TOP_K)
+    model       : optional Groq model override
+    temperature : optional generation temperature (default 0.05)
 
     Returns
     -------
-    dict with keys: answer, sources, chunks_retrieved, user_role, access_denied
+    dict with keys: answer, sources, chunks_retrieved, user_role, access_denied, model_used, latency_ms, filter_applied
     """
+    start_time = time.time()
+    effective_top_k = top_k if (top_k and 1 <= top_k <= 10) else TOP_K
+    effective_temp = temperature if (temperature is not None and 0.0 <= temperature <= 1.0) else 0.05
+
     # 1. Determine allowed access levels for this role
     allowed_levels = ROLE_ACCESS_MAP.get(user_role, ["public"])
+    filter_repr = f'{{"access_level": {{"$in": {allowed_levels}}}}}'
     logger.info(
         "Query from role=%s | allowed=%s | question=%s",
         user_role, allowed_levels, question[:80]
@@ -124,17 +142,21 @@ def retrieve_and_answer(question: str, user_role: str) -> dict:
         collection = _get_collection()
     except Exception as e:
         logger.error("ChromaDB collection not available: %s", e)
+        elapsed = round((time.time() - start_time) * 1000, 1)
         return {
             "answer": "The knowledge base is not ready. Please run the ingestion script first: `python -m backend.ingest`",
             "sources": [],
             "chunks_retrieved": 0,
             "user_role": user_role,
             "access_denied": False,
+            "model_used": "none",
+            "latency_ms": elapsed,
+            "filter_applied": filter_repr,
         }
 
     results = collection.query(
         query_embeddings=[query_vector],
-        n_results=TOP_K,
+        n_results=effective_top_k,
         where={"access_level": {"$in": allowed_levels}},
         include=["documents", "metadatas", "distances"],
     )
@@ -157,12 +179,16 @@ def retrieve_and_answer(question: str, user_role: str) -> dict:
 
     # 5. If ZERO permitted + relevant chunks → deny without calling LLM
     if not relevant:
+        elapsed = round((time.time() - start_time) * 1000, 1)
         return {
             "answer": _ACCESS_DENIED_MSG,
             "sources": [],
             "chunks_retrieved": 0,
             "user_role": user_role,
             "access_denied": True,
+            "model_used": "none (RBAC pre-filter hard blocked)",
+            "latency_ms": elapsed,
+            "filter_applied": filter_repr,
         }
 
     # 6. Build context string for LLM
@@ -170,6 +196,7 @@ def retrieve_and_answer(question: str, user_role: str) -> dict:
     sources = []
 
     for i, (doc, meta, dist) in enumerate(relevant, start=1):
+        rel_score = round(max(0.0, 1.0 - float(dist)), 4)
         context_parts.append(f"[Document {i} | Source: {meta['source_file']} | Level: {meta['access_level']}]\n{doc}")
         sources.append(
             {
@@ -177,6 +204,7 @@ def retrieve_and_answer(question: str, user_role: str) -> dict:
                 "access_level": meta["access_level"],
                 "source_file": meta["source_file"],
                 "chunk_id": f"{meta['access_level']}__{meta['source_file']}__{meta.get('chunk_index', i)}",
+                "relevance_score": rel_score,
             }
         )
 
@@ -190,21 +218,45 @@ def retrieve_and_answer(question: str, user_role: str) -> dict:
         f"Answer (based strictly on the context above):"
     )
 
-    try:
-        groq_client = _get_groq()
-        response = groq_client.chat.completions.create(
-            model=GROQ_MODEL,
-            messages=[
-                {"role": "system", "content": _SYSTEM_PROMPT},
-                {"role": "user", "content": user_message},
-            ],
-            temperature=0.05,   # near-zero for factual, deterministic answers
-            max_tokens=1024,
-        )
-        answer = response.choices[0].message.content.strip()
-    except Exception as e:
-        logger.error("Groq API error: %s", e)
-        answer = f"LLM error: {str(e)}. Please check your GROQ_API_KEY."
+    answer = None
+    model_used = None
+    groq_client = _get_groq()
+
+    primary_model = model or GROQ_MODEL
+    candidate_models = [primary_model]
+    for alt in ["openai/gpt-oss-20b", "qwen/qwen3.8-27b", "llama-3.1-8b-instant", "llama3-70b-8192"]:
+        if alt not in candidate_models:
+            candidate_models.append(alt)
+
+    last_error = None
+    for model_name in candidate_models:
+        try:
+            response = groq_client.chat.completions.create(
+                model=model_name,
+                messages=[
+                    {"role": "system", "content": _SYSTEM_PROMPT},
+                    {"role": "user", "content": user_message},
+                ],
+                temperature=effective_temp,
+                max_tokens=1024,
+            )
+            answer = response.choices[0].message.content.strip()
+            model_used = model_name
+            break
+        except Exception as e:
+            last_error = e
+            err_str = str(e).lower()
+            if "model_not_found" in err_str or "does not exist" in err_str:
+                logger.warning("Groq model %s unavailable, trying next candidate...", model_name)
+                continue
+            logger.error("Groq API error on model %s: %s", model_name, e)
+            break
+
+    if answer is None:
+        answer = f"LLM error: {str(last_error)}. Please check your GROQ_API_KEY."
+        model_used = "error"
+
+    elapsed = round((time.time() - start_time) * 1000, 1)
 
     return {
         "answer": answer,
@@ -212,4 +264,41 @@ def retrieve_and_answer(question: str, user_role: str) -> dict:
         "chunks_retrieved": len(relevant),
         "user_role": user_role,
         "access_denied": False,
+        "model_used": model_used or "unknown",
+        "latency_ms": elapsed,
+        "filter_applied": filter_repr,
     }
+
+
+def get_catalog_summary() -> dict:
+    """Return non-sensitive statistical metadata about the indexed documents."""
+    try:
+        coll = _get_collection()
+        total = coll.count()
+        res = coll.get(include=["metadatas"])
+        metas = res.get("metadatas", [])
+        summary = {
+            "total_chunks": total,
+            "by_level": {"public": 0, "employee": 0, "manager": 0, "hr": 0},
+            "files_by_level": {"public": set(), "employee": set(), "manager": set(), "hr": set()},
+        }
+        for m in metas:
+            lvl = m.get("access_level", "public")
+            if lvl in summary["by_level"]:
+                summary["by_level"][lvl] += 1
+            src = m.get("source_file")
+            if src and lvl in summary["files_by_level"]:
+                summary["files_by_level"][lvl].add(src)
+        for lvl in summary["files_by_level"]:
+            summary["files_by_level"][lvl] = sorted(list(summary["files_by_level"][lvl]))
+        return summary
+    except Exception as e:
+        logger.error("Error getting catalog summary: %s", e)
+        return {
+            "total_chunks": 0,
+            "by_level": {"public": 0, "employee": 0, "manager": 0, "hr": 0},
+            "files_by_level": {"public": [], "employee": [], "manager": [], "hr": []},
+            "error": str(e),
+        }
+
+

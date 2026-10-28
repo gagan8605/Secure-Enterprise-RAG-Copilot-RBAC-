@@ -89,7 +89,10 @@ def ingest_documents(reset: bool = True) -> int:
     )
 
     # ── ChromaDB client ────────────────────────────────────────────────────────
-    client = chromadb.PersistentClient(path=CHROMA_DB_PATH)
+    client = chromadb.PersistentClient(
+        path=CHROMA_DB_PATH,
+        settings=chromadb.config.Settings(anonymized_telemetry=False),
+    )
 
     if reset:
         try:

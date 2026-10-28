@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: secure-enterprise-rag-backend
+    runtime: python
+    buildCommand: "pip install -r requirements.txt && python -m backend.ingest"
+    startCommand: "uvicorn backend.main:app --host 0.0.0.0 --port $PORT"
+    plan: free
+    region: oregon
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: GROQ_API_KEY
+        sync: false
+      - key: GROQ_MODEL
+        value: openai/gpt-oss-20b
+      - key: SECRET_KEY
+        generateValue: true
+      - key: ACCESS_TOKEN_EXPIRE_MINUTES
+        value: 120
+      - key: CHROMA_DB_PATH
+        value: ./chroma_db

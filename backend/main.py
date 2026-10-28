@@ -33,7 +33,7 @@ from backend.models import (
     Token,
     UserInfo,
 )
-from backend.retriever import retrieve_and_answer
+from backend.retriever import retrieve_and_answer, get_catalog_summary
 
 logging.basicConfig(
     level=logging.INFO,
@@ -125,6 +125,9 @@ async def ask(
     - `sources`         : retrieved chunks shown for transparency
     - `chunks_retrieved`: number of permitted chunks found
     - `access_denied`   : true if no permitted chunks were found
+    - `latency_ms`      : query execution latency in milliseconds
+    - `model_used`      : model identifier used for inference
+    - `filter_applied`  : pre-retrieval ChromaDB where clause applied
     """
     question = request.question.strip()
     if not question:
@@ -133,9 +136,18 @@ async def ask(
     username = current_user["username"]
     role = current_user["role"]
 
-    logger.info("Ask: user=%s role=%s question='%s'", username, role, question[:80])
+    logger.info(
+        "Ask: user=%s role=%s top_k=%s model=%s question='%s'",
+        username, role, request.top_k, request.model, question[:80]
+    )
 
-    result = retrieve_and_answer(question, role)
+    result = retrieve_and_answer(
+        question=question,
+        user_role=role,
+        top_k=request.top_k,
+        model=request.model,
+        temperature=request.temperature,
+    )
 
     return AskResponse(
         answer=result["answer"],
@@ -144,10 +156,41 @@ async def ask(
         user_role=role,
         chunks_retrieved=result["chunks_retrieved"],
         access_denied=result.get("access_denied", False),
+        model_used=result.get("model_used"),
+        latency_ms=result.get("latency_ms"),
+        filter_applied=result.get("filter_applied"),
     )
+
+
+@app.get("/catalog", tags=["RAG"])
+async def get_catalog(current_user: dict = Depends(get_current_user)):
+    """
+    Return statistical distribution of documents and chunks per access level.
+    Requires authentication. Does not expose raw chunk text.
+    """
+    summary = get_catalog_summary()
+    summary["requested_by"] = current_user["username"]
+    summary["user_role"] = current_user["role"]
+    return summary
+
+
+@app.get("/system-info", tags=["System"])
+async def system_info():
+    """Return runtime architecture and configuration metadata."""
+    from backend.config import GROQ_MODEL, EMBEDDING_MODEL, COLLECTION_NAME, TOP_K
+    return {
+        "status": "operational",
+        "service": "Secure Enterprise RAG Copilot",
+        "groq_default_model": GROQ_MODEL,
+        "embedding_model": EMBEDDING_MODEL,
+        "collection_name": COLLECTION_NAME,
+        "default_top_k": TOP_K,
+        "security_mechanism": "Pre-retrieval vector metadata filtering (Zero-Trust RBAC)",
+    }
 
 
 # ─── Dev entry point ───────────────────────────────────────────────────────────
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run("backend.main:app", host="0.0.0.0", port=8000, reload=True)
+
